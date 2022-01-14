@@ -43,7 +43,7 @@ const GuardarPersona = () => {
 								name="nombre"
 								placeholder="Tu Nombre"
 								required
-								pattern="[A-Za-z]{1,25}"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">
@@ -57,7 +57,7 @@ const GuardarPersona = () => {
 								value={apellidoP}
 								placeholder="Tu apellido Paterno"
 								required
-								pattern="[A-Za-z]{1,25}"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">
@@ -71,7 +71,7 @@ const GuardarPersona = () => {
 								value={apellidoM}
 								placeholder="Tu apellido Materno"
 								required
-								pattern="[A-Za-z]{1,25}"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">

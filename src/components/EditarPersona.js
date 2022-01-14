@@ -48,7 +48,7 @@ export const EditarPersona = () => {
 								value={nombre}
 								placeholder="El nuevo nombre"
 								required
-								pattern="^([a-zA-Z]{2,}\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">
@@ -62,7 +62,7 @@ export const EditarPersona = () => {
 								value={apellidoP}
 								placeholder="El nuevo Apellido"
 								required
-								pattern="[A-Za-z]{1,25}"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">
@@ -76,7 +76,7 @@ export const EditarPersona = () => {
 								value={apellidoM}
 								placeholder="El nuevo apellido"
 								required
-								pattern="[A-Za-z]{1,25}"
+								pattern="^([a-z]+[,.]?[ ]?|[a-z]+['-]?)+$"
 							/>
 						</div>
 						<div className="form-group">
